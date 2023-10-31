@@ -4,6 +4,7 @@
 
 #%% Packages imports
 import cv2
+import torch
 import time
 import json
 import threading
@@ -44,7 +45,7 @@ def process_boxes(boxes, scores, class_ids, pts):
 
 def main():
     # Initialize the webcam
-    cap = cv2.VideoCapture("rtsp://admin:Abcd1234!@113.160.225.96:855")
+    cap = cv2.VideoCapture("rtsp://admin:Abcd1234!@172.16.2.7:8554")
 
     # Initialize YOLOv7 object detector
     model_path = "models/yolov7-tiny_480x640.onnx"
