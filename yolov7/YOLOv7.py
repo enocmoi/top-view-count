@@ -1,6 +1,7 @@
 import time
 import cv2
 import numpy as np
+import torch
 import onnxruntime
 
 from yolov7.utils import xywh2xyxy, nms, draw_detections
